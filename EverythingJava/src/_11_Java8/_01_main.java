@@ -1,11 +1,21 @@
 package _11_Java8;
 // V1-V12 Telusko 
 // Consumer Interface and Lambda Expression and Method Reference
+
 /* List extends Collection and Collection extends Iterable interface. List class is present from java 1.2 
  but forEach() came in java 1.8. forEach() is implemented in Iterable interface because otherwise all 
  implementing class would have to implement it. Which is why feature of defining the methods in the interface
  was adopted in java 1.8
 */
+
+/*
+ Consumer interface is functional interface with unimplemented method accept().
+ Since forEach() is implemented in Iteratable Interface, all classes/interfaces implementing/extending it
+ will have it. 
+ forEach() accepts the consumer interface object as parametre and executes the accept() (which is 
+ over riden by the programmer at time of making object of Consumer interface by implementing/ anonymous class 
+ lambda expression/ Method reference) for all the iteratable elements.
+ */
 
 
 import java.util.Arrays;
@@ -88,12 +98,14 @@ public class _01_main {
 		a.forEach(System.out::println);
 		
 		
+		// double it is static method in the present class written by me
 		// to double the every passing value - using lambda expression
 		a.forEach(i-> doubleit(i));
 		
 		// the above one can be written as- ClassName::method, since method is static
 		a.forEach(_01_main::doubleit);
 		
+		// This basically means you are overiding accept() to call doubleit().
 		
 	}
 }
