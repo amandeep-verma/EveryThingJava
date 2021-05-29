@@ -1,4 +1,4 @@
-package _09_Classes;
+package _09_InbuildClasses;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -117,6 +117,9 @@ public class _01_ComparableComparator {
 //		li.sort(c); // you can uncomment it and comment the line below, as they do the same job
 		Collections.sort(li, c);
 		System.out.println(li);
+		
+		// This can also be achieved by lambda expression
+		Collections.sort(li, (o1,o2)->  o1.getName().compareTo(o2.getName()) );
 
 	}
 }

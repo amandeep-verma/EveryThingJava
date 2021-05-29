@@ -6,6 +6,9 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
+/*
+ List can stores null values. Follows insertion order.
+ */
 public class _02_ListProject {
 
 	public static void main(String[] args) {
@@ -121,17 +124,18 @@ public class _02_ListProject {
 		
 		// Implementing compare() of functional interface Comparator for custom sorting
 		Comparator<Integer> c = (o1, o2)->{
-			return o1>o2? o2:o1;
+			return o2-o1;
 		};
-		
 		abc.sort(c); 
-		
-		abc.sort((o1, o2)->
-			o1>o2? o2:o1
-		);
-		
 		System.out.println(abc);
 		
+		
+		// Sorting using lambda expression(Comparator interface)
+		abc.sort((o1, o2)->
+			o2-o1
+		);
+		abc.sort(c); 
+		System.out.println(abc);
 	}
 
 }

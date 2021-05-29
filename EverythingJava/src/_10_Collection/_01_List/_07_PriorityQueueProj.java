@@ -1,8 +1,15 @@
 package _10_Collection._01_List;
 
+import java.util.ArrayList;
 import java.util.PriorityQueue;
 
-public class PriorityQueueProj {
+/*
+ Based on priority heap
+ Takes log(n) time for both insertion and deletion
+ As DS, its performnance is better than binary search trees.
+ */
+
+public class _07_PriorityQueueProj {
 	public static void main(String[] args) {
 		
 		// adding and removing an element takes log(n) time. 

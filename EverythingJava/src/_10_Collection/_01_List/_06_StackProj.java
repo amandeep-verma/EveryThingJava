@@ -1,7 +1,7 @@
 package _10_Collection._01_List;
 import java.util.Stack;
 
-public class StackProj6 {
+public class _06_StackProj {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

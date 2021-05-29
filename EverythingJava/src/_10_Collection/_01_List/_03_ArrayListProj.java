@@ -4,6 +4,16 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
+/*
+ArrayList follows growable array as datastructure. 
+Supports multi-threading
+Intial capacity is 10 and incremental capacity is -
+(3/2* oldcapacity)+1
+ArrayList is efficient when we want to store or insert element at the end of an arrayList. But when we are trying to add
+element in between the the collection it onvloves shift operator and its not efficient then.
+ArrayList is not synchronized, which is to say if multiple threads access the arraylisr we must externally synchronize the block of 
+code which modifies the list. But it is still preferred one.
+*/
 public class _03_ArrayListProj {
 
 	public static void main(String[] args) {
@@ -19,39 +29,6 @@ public class _03_ArrayListProj {
 		
 		// indexOf(object) - gives indexOf of object 
 		System.out.println(fruitlist.indexOf("Apple"));
-		
-
-		// printing the ArrayList
-		System.out.println("fruitlist ArrayList");
-		System.out.println(fruitlist);
-		
-		
-		// adding object to the ArrayList at desired index
-		System.out.println("fruitlist ArrayList after adding");
-		fruitlist.add(1, "Dates");
-		System.out.println(fruitlist);
-		
-		
-		// remove object from the ArrayList
-		System.out.println("fruitlist ArrayList removing object");
-		System.out.println(fruitlist.remove("Apple"));
-
-		
-		System.out.println(fruitlist);
-		
-		//checking if an object is in the ArrayList
-		System.out.println("Checking if banana is present in fruitlist");
-		System.out.println(fruitlist.contains("Banana"));
-		
-		
-		//checking if an object is in the ArrayList
-		System.out.println("printing the element index 2");
-		System.out.println(fruitlist.get(2));
-		
-		// toArray(new String[0]) - to convert list to Wrapper type class
-		String[] fruits =  (String[]) fruitlist.toArray(new String[0]); // Parameter for what kind of array you want to return
 	
-		
-		
 	}
 }
