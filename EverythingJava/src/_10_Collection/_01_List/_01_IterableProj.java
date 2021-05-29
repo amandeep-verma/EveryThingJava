@@ -3,13 +3,12 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
-public class IterableProj1 {
+public class _01_IterableProj {
 
 	public static void main(String[] args) {
 		
+		// creating object co using collection
 		
-		
-		// creating object c using collection
 		Collection co = new ArrayList();
 		
 		// add() to add the elements to the collection
@@ -18,6 +17,13 @@ public class IterableProj1 {
 		co.add("rusk");
 		co.add("juice");
 		co.add("bunn");
+		
+		
+		Collection colist = new ArrayList();
+		colist.add("ice cream");
+		colist.add("fruit");
+		colist.add("veggie");
+		
 
 		System.out.println("I am co -> "+co);
 		
@@ -28,10 +34,7 @@ public class IterableProj1 {
 		// size() - to see the size of the collection
 		System.out.println("size of co is -> "+co.size());
 		
-		Collection colist = new ArrayList();
-		colist.add("ice cream");
-		colist.add("fruit");
-		colist.add("veggie");
+		
 		System.out.println("I am colist -> "+colist);
 		
 		// addAll() can be used to add another collection to the present collection
@@ -61,7 +64,7 @@ public class IterableProj1 {
 		
 		
 		co.retainAll(colist);
-		System.out.println("I am co after reatining elements from colist-> "+co);
+		System.out.println("I am co after retaining elements from colist-> "+co);
 		// clear() - clears the collection
 		co.clear();
 		System.out.println("I am co after clearning -> "+co);

@@ -4,19 +4,19 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ArrayListProj3 {
+public class _03_ArrayListProj {
 
 	public static void main(String[] args) {
 		
 		// defining ArrayList
-		List fruitlist = new ArrayList();
+		List<String> fruitlist = new ArrayList<>();
 		
 		
 		fruitlist.add("Apple");
 		fruitlist.add("Orange");
 		fruitlist.add("Banana");
 		fruitlist.add("Strawberry");
-		fruitlist.add(1212); // you can have element of different type
+		
 		// indexOf(object) - gives indexOf of object 
 		System.out.println(fruitlist.indexOf("Apple"));
 		
@@ -49,8 +49,8 @@ public class ArrayListProj3 {
 		System.out.println(fruitlist.get(2));
 		
 		// toArray(new String[0]) - to convert list to Wrapper type class
-		Object[] fruits =  fruitlist.toArray(new Object[0]);
-		
+		String[] fruits =  (String[]) fruitlist.toArray(new String[0]); // Parameter for what kind of array you want to return
+	
 		
 		
 	}

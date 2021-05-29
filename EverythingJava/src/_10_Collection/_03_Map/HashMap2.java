@@ -1,5 +1,6 @@
 package _10_Collection._03_Map;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -58,6 +59,10 @@ public class HashMap2 {
 		
 		
 		// Sorting the hashmap
+		
+		
+		// Can you sort them by adding the keys as TreeSet 
+		// How would you do the custom sorting.
 	}
 	
 
