@@ -1,10 +1,10 @@
 package _10_Collection._03_Map;
 
-public class Laptop {
+public class _00_Laptop {
 	private String name;
 	private int price;
 	private int ram;
-	public Laptop(String name, int price, int ram) {
+	public _00_Laptop(String name, int price, int ram) {
 		super();
 		this.name = name;
 		this.price = price;

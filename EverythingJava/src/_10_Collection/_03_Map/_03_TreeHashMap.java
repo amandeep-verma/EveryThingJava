@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class TreeHashMap3 {
+public class _03_TreeHashMap {
 
 	public static void main(String[] args) {
 		

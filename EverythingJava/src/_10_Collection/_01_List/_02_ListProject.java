@@ -29,6 +29,7 @@ public class _02_ListProject {
 		co.add("juice");
 		co.add("bunn");
 		
+		
 		// Printing list
 		System.out.println("The list co is -> "+co);
 		
@@ -108,6 +109,8 @@ public class _02_ListProject {
 		{
 			System.out.print(aa+", ");
 		}
+		
+		
 		System.out.println();
 		
 		// typecast to wrapper class to remove the object

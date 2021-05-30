@@ -4,12 +4,15 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class LinkedHashMap1 {
+public class _02_LinkedHashMap {
 
 	public static void main(String[] args) {
 		
-		// In linkedHashMap you add key-value pair
 		// LinkedHashMap follows insertion order
+		// Keys are always unique, if you enter duplicate, new keypair replaces the old one
+		// Can store 1 null key
+		// Initial Capacity =16, incremental = old +(0.75*old)
+		
 
 		Map a = new LinkedHashMap();
 		
@@ -18,6 +21,7 @@ public class LinkedHashMap1 {
 		a.put(4, "Becky");
 		a.put(2, "Arjun");
 		a.put(false, 12.55);
+		a.put(null,123);
 		
 		System.out.println(a);
 		
