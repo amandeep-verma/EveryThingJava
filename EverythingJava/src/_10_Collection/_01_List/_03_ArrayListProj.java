@@ -7,8 +7,7 @@ import java.util.List;
 /*
 ArrayList follows growable array as datastructure. 
 Supports multi-threading.
-Intial capacity is 10 and incremental capacity is -
-(3/2* oldcapacity)+1
+Intial capacity is 10 and incremental capacity is - (3/2* oldcapacity)+1
 ArrayList is efficient when we want to store or insert element at the end of an arrayList. But when we are trying to add
 element in between the the collection it onvloves shift operator and its not efficient then.
 ArrayList is not synchronized, which is to say if multiple threads access the arraylist we must externally synchronize the block of 
@@ -29,6 +28,6 @@ public class _03_ArrayListProj {
 		
 		// indexOf(object) - gives indexOf of object 
 		System.out.println(fruitlist.indexOf("Apple"));
-	
+
 	}
 }

@@ -15,6 +15,7 @@ public class _06_StackProj {
 		System.out.println(st);
 		
 		st.push(9);
+		
 		System.out.println("after pushing "+st);
 		
 		if(st.size()>0)

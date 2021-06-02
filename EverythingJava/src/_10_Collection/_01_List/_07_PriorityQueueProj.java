@@ -26,6 +26,7 @@ public class _07_PriorityQueueProj {
 		p.add(1);
 		p.add(30);
 		
+		System.out.println(p);
 		System.out.println(p.size());
 		
 		System.out.println("the head element is "+p.element()); // peeks the top most element, if empty throws exception
