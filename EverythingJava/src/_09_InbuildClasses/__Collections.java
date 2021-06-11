@@ -17,7 +17,6 @@ public class __Collections {
 		a.add(909);
 		
 		
-		
 		Collections.sort(a);
 		System.out.println(a);
 		
