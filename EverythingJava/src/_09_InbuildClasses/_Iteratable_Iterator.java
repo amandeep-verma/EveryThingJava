@@ -1,12 +1,10 @@
 package _09_InbuildClasses;
 
-import java.util.Arrays;
-
-public class _04_Arrays {
-
+public class _Iteratable_Iterator {
 
 	public static void main(String[] args) {
-		
-		
+		// TODO Auto-generated method stub
+
 	}
+
 }
