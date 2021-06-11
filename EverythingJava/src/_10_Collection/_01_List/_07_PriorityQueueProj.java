@@ -1,7 +1,7 @@
 package _10_Collection._01_List;
 
-import java.util.ArrayList;
 import java.util.PriorityQueue;
+
 
 /*
  Based on priority heap
@@ -26,6 +26,7 @@ public class _07_PriorityQueueProj {
 		p.add(1);
 		p.add(30);
 		
+		
 		System.out.println(p);
 		System.out.println(p.size());
 		
@@ -36,10 +37,22 @@ public class _07_PriorityQueueProj {
 		System.out.println("removing the root item "+p.remove()); // remove the root element, if empty throws exception
 		System.out.println("removing the root item "+p.poll()); // removes the root element, if empty returns null
 		
-		System.out.println("checks PriorityQueue it contains 100 ="+p.contains(100));
+		System.out.println("checks PriorityQueue if contains 100 ="+p.contains(100));
 		
 		System.out.println("if PriorityQueue is empty "+p.isEmpty()); // 
 		
 		
+		// Using custom comparator
+		p = new PriorityQueue<>((o1, o2) -> o2 - o1 );
+		p.add(12);
+		p.add(10);
+		p.add(7);
+		p.add(100);
+		p.add(93);
+		p.add(17);
+		p.add(50);
+		p.add(1);
+		p.add(30);
+		System.out.println(p);
 	}
 }

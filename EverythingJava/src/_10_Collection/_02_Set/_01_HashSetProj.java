@@ -10,6 +10,7 @@ public class _01_HashSetProj {
 
 	public static void main(String[] args){
 		// Follows Hashtable as dataStructure 
+		// Uses HashMap to store the elements, the objects as keys and PRESENT as value
 		// doesn't follows insertion order
 		// HashSet are best for dynamic programming as lookup takes almost O(1) time
 		// Initial cap 16

@@ -14,13 +14,18 @@ public class _01_HashMap {
 	public static void main(String[] args) {
 
 		// HashMap doesnt follows insertion order
-		// Keys are always unique, if you enter duplicate, new keypair replaces the old
-		// one
+		// Keys are always unique, if you enter duplicate, new keypair replaces the old one
 		// Can store 1 null key
 		// Initial Capacity =16, incremental = old +(0.75*old)
 		// Supports multithreading but is not synchronized, which is to say if multiple
 		// threads access it we must
 		// externally synchronize the block of code which modifies the map.
+		// When you add a key value pair, your function finds the hashcode for the key and use 
+		// hashcode & (Bitwise and) size of hashtable,  operation to find the index to store the key value pair in the
+		// hashtable. There it stores entry as a Node, with 4 values - key, value, hashcode, next. 
+		// If another key with hashset happens to occur than it will have same index, then another node will be added
+		// to the already present Node pointed by next variable. ie LinkedList
+		// If this LinkedList grows beyond a threshold value, it gets converted into a balanced binary search tree.
 
 		Map<Integer, String> a = new HashMap<>();
 
