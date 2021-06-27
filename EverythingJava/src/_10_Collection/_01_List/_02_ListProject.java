@@ -97,6 +97,8 @@ public class _02_ListProject {
 		List<Integer> abc = Arrays.asList(5, 55, -45, 4545, -10);
 		System.out.println(abc);
 
+		abc.get(1);
+		System.out.println("-----");
 		// this is growable List
 		abc = new ArrayList<>();
 		abc.add(5);
