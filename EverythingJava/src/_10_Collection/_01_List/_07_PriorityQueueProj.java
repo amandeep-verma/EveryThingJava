@@ -27,6 +27,7 @@ public class _07_PriorityQueueProj {
 		p.add(30);
 		
 		
+		
 		System.out.println(p);
 		System.out.println(p.size());
 		
