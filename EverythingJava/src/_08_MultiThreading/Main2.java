@@ -37,6 +37,7 @@ public class Main2 {
 		Hi obj1 = new Hi();
 		Hello obj2 = new Hello();
 		
+		
 		// The start() calls run() internally.
 		obj1.start();
 		try { Thread.sleep(100); } catch (InterruptedException e) { }

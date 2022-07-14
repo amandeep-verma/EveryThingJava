@@ -20,7 +20,6 @@ public class _03_ArrayListProj {
 		// defining ArrayList
 		List<String> fruitlist = new ArrayList<>();
 		
-		
 		fruitlist.add("Apple");
 		fruitlist.add("Orange");
 		fruitlist.add("Banana");

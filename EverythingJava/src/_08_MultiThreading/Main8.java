@@ -22,6 +22,8 @@ class Counte {
 	}
 }
 
+
+
 public class Main8 {
 
 	public static void main(String[] args) throws InterruptedException {

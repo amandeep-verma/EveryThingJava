@@ -28,21 +28,22 @@ public class _01_IterableProj {
 		System.out.println("I am co -> "+co);
 		
 		// contains("object") - to check if list contains the object
-		System.out.println("if co contains chai -> "+co.contains("chai"));
+		System.out.println("if co contains chai -> "+ co.contains("chai"));
 		// isEmpty to see if list is empty
 		System.out.println("if co is Empty -> "+co.isEmpty());
 		// size() - to see the size of the collection
 		System.out.println("size of co is -> "+co.size());
 		
 		
-		System.out.println("I am colist -> "+colist);
+		System.out.println("I am colist -> "+ colist);
 		
 		// addAll() can be used to add another collection to the present collection
 		System.out.println(co.addAll(colist));
 		System.out.println("I am updated co -> "+co);
 		
-		System.out.println("if co contains all elements of colist -> "+co.containsAll(colist));
-		System.out.println("prints the class type of co "+co.getClass());
+		System.out.println("if co contains all elements of colist -> "+ co.containsAll(colist));
+		System.out.println("prints the class type of co "+ co.getClass());
+		
 		// remove() - to remove an object
 		co.remove("veggie");
 		System.out.println("I am updated co -> "+co);

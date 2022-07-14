@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.PriorityQueue;
 import java.util.Set;
 import java.util.TreeMap;
@@ -64,7 +65,7 @@ public class _01_HashMap {
 		Set<Integer> keys = a.keySet();
 		List<String> values = new ArrayList<>(a.values());
 
-		Set d = a.entrySet(); // you can obtain entry set like this.
+		Set<Entry<Integer, String>> d = a.entrySet(); // you can obtain entry set like this.
 
 		System.out.println(d);
 
@@ -111,5 +112,4 @@ public class _01_HashMap {
 				(o1, o2) -> o1.getValue().compareTo(o2.getValue()));
 
 	}
-
 }
