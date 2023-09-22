@@ -73,9 +73,9 @@ public class _03_main {
 
 		// reduce() takes 2 values as as parametre, 1st inital object value, 2nd BinaryOperator object
 		// BinaryOperator is functional interface with apply as unimplemented method. It takes one paramter of input type,
-		// whiel defininng BinaryOperator.
+		// while definining BinaryOperator.
 		// apply() takes 2 parametre, 1 is the initial value which comes from reduce() and other is each object in stream
-		// using which we compute and return it. c= carry, e v= value
+		// using which we compute and return it. c= carry, e = value
 		// anonymous class
 		BinaryOperator<Integer> b = new BinaryOperator<Integer>() {
 			public Integer apply(Integer c, Integer e) {

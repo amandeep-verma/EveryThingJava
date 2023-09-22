@@ -21,7 +21,6 @@ public class _04_main {
 		
 		System.out.println(result);
 		
-		
 //		Declarative Programming
 		// filter() takes 1 parametre of type Predicate interface object.
 		// Predicate is functional interface with test method unimplemented with return type boolean

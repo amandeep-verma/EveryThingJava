@@ -12,7 +12,8 @@ import java.util.stream.Stream;
  or more intermediate operations and a terminal operation.
  
  Intermediate operations return a new stream. They are always lazy; executing an intermediate operation such as 
- filter() does not actually perform any filtering, but instead creates a new stream. ex- filter(), map(), mapToInt()
+ filter() does not actually perform any filtering, but instead creates a new stream. ex- map(), flatMap(),
+ filter(), anyMatch(), skip(), limit(), mapToInt()
  
  Terminal operations may traverse the stream to produce a result. After the terminal operation is performed, the 
  stream pipeline is considered consumed, and can no longer be used. ex- findFirst(), forEach(), reduce()
@@ -31,6 +32,7 @@ public class _02_main {
 		// We have used forEach method in previous class
 		// The List can be converted into stream of data by
 		values.stream().forEach(System.out::println);
+		
 		
 		System.out.println("*************");
 		// We can use parallel stream as well, which makes use of threads
