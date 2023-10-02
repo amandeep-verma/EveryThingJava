@@ -3,22 +3,24 @@ package _09_InbuildClasses;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.List;
 
 /*
  Comparable and Comparator. 
  
  For a list of objects of custom class, if you call Collection.sort(listName,null) or listName.sort(null), will throw 
- runtime error becuase program doesn't know how to compare the two objects. Now you can resolve it in 2 ways -
+ runtime error because program doesn't know how to compare the two objects. Now you can resolve it in 2 ways -
  
 
  Comparable interface- 
- For a custom class which you have acess to, can implement the comparable interface and implement the compareTo(object o)
+ For a custom class which you have access to, can implement the comparable interface and implement the compareTo(object o)
  method to define how the test objects are compared. So when you call sort method on the list of the objects of this 
  class, it is defined how two objects are compared. Return type of compareTo() is integer. Negative number specifies
  the calling object is smaller than the passed object, positive number specifies the reverse and 0 specifies both are 
  equal. Java uses internal sorting method to sort the elements, - + or a zero indicates whether it has to swap the
  objects or not. 
+ Another classical use case is in Date Class written below
  
  
  Comparator interface- 
@@ -71,16 +73,31 @@ class test implements Comparable<test> {
 
 }
 
+
+class Date implements Comparable<Date>
+{
+	private final int month, day, year;
+	
+	public Date(int month, int day, int year) {
+		this.month = month;
+		this.day = day;
+		this.year = year;
+	}
+	
+	@Override
+	public int compareTo(Date that) {
+		if (this.year < that.year)	return -1;
+		if (this.year > that.year)	return +1;
+		if (this.month < that.month)	return -1;
+		if (this.month > that.month)	return +1;
+		if (this.day < that.day)	return -1;
+		if (this.day > that.day)	return +1;
+		return 0;
+	}
+}
+
 public class _01_ComparableComparator {
 
-	public static String reverse(String s) {
-		StringBuilder ret = new StringBuilder();
-
-		for (int i = s.length() - 1; i >= 0; i--) {
-			ret.append(s.charAt(i));
-		}
-		return ret.toString();
-	}
 
 	public static void main(String[] args) {
 		test t1 = new test(104, "Rahul");
@@ -106,6 +123,7 @@ public class _01_ComparableComparator {
 //		li.sort(null); // you can uncomment it and comment the line below, as they do the same job
 		Collections.sort(li, null);
 		System.out.println(li);
+		
 
 		
 		// Custom Comparator object
@@ -120,6 +138,5 @@ public class _01_ComparableComparator {
 		
 		// This can also be achieved by lambda expression
 		Collections.sort(li, (o1,o2)->  o1.getName().compareTo(o2.getName()) );
-
 	}
 }
