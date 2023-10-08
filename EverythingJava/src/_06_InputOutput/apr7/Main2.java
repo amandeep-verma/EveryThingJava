@@ -1,4 +1,4 @@
-package _05_Exceptions.apr7;
+package _06_InputOutput.apr7;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

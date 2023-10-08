@@ -17,7 +17,7 @@ public class ExceptionDemo2 {
 		System.out.println("enter your age ");
 		try {
 			double age = sc.nextDouble();
-			// sc.close();
+			//sc.close();
 			System.out.println("read two numbers");
 			int a=sc.nextInt();
 			int b=sc.nextInt();;

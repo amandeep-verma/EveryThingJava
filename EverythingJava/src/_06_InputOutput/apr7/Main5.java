@@ -1,4 +1,4 @@
-package _05_Exceptions.apr7;
+package _06_InputOutput.apr7;
 // Copies content of one file into another
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

@@ -1,4 +1,4 @@
-package _05_Exceptions.apr7;
+package _06_InputOutput.apr7;
 // FileInputStream is used to access a file. its data can be later printed or altered.
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

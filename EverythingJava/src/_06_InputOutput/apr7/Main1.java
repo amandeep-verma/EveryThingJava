@@ -1,4 +1,4 @@
-package _05_Exceptions.apr7;
+package _06_InputOutput.apr7;
 // FileOutputStream can be used to access a file and write the content inside it from java.
 
 import java.io.FileNotFoundException;

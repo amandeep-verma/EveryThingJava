@@ -12,7 +12,7 @@ public class ExceptionDemo {
 		System.out.println("enter your name ");
 		String name = sc1.nextLine();
 
-//		sc1.close();
+		sc1.close();
 
 		System.out.println("enter your age ");
 

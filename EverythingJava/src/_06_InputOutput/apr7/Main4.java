@@ -1,4 +1,4 @@
-package _05_Exceptions.apr7;
+package _06_InputOutput.apr7;
 // Program to calculate number of lines in the file
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
