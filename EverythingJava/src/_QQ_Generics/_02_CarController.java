@@ -3,24 +3,27 @@ package _QQ_Generics;
 public class _02_CarController<T extends _01_Vehicle> {
 	
 	
-	T car;
+	private T vehicle;
 
-//	public _02_CarController(T car) {
-//		
-//		this.car = car;
-//	}
+	public _02_CarController(T vehicle) {
+		
+		this.vehicle = vehicle;
+	}
 	
-	public void draw(T t)
+	public void color()
 	{
-		t.setColor("blue");
+		System.out.println("color of"+ vehicle.getClass() +" is "+ vehicle.getColor());
 	}
 	
 	
 	public static void main(String[] args) {
 		
-		_02_CarController<Car> = new _02_CarController<>(Car);
 		
+		_01_Car car = new _01_Car(112,"blue",true, "honda");
+		
+		_02_CarController<_01_Car> controller = new _02_CarController<_01_Car>(car);
+		
+		controller.color();
 		
 	}
-
 }

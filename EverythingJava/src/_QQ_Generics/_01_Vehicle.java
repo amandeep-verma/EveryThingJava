@@ -9,7 +9,6 @@ public class _01_Vehicle {
 	private boolean isElectric;
 
 	public _01_Vehicle(int engineNumber, String color, boolean isElectric) {
-		super();
 		this.engineNumber = engineNumber;
 		this.color = color;
 		this.isElectric = isElectric;
