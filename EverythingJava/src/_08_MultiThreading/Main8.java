@@ -13,10 +13,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 class Counte {
 	AtomicInteger count = new AtomicInteger();
 
-	// the keyword synchronized forces only 1 thread to use use the method at a time
+	// keyword synchronized forces only 1 thread to use use the method at a time
 	// which prevents the corruption of bits
 	public void increment() {
-		// here if we are using atomic integer, we cant say count++, instead we will use
+		// here if we are using atomic integer, we can't use count++, instead we will use
 		// count.incrementAndGet();
 		count.incrementAndGet();
 	}

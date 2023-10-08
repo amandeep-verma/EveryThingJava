@@ -12,7 +12,7 @@ package _11_Java8;
  Consumer interface is functional interface with unimplemented method accept().
  Since forEach() is implemented in Iteratable Interface, all classes/interfaces implementing/extending it
  will have it. 
- forEach() accepts the consumer interface object as parametre and executes the accept() (which is 
+ forEach() accepts the consumer interface object as parameter and executes the accept() (which is 
  over riden by the programmer at time of making object of Consumer interface by implementing/ anonymous class 
  lambda expression/ Method reference) for all the iteratable elements.
  */

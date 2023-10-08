@@ -1,6 +1,5 @@
 package _08_MultiThreading;
 // thread.isAlive() checks if thread is alive and thread.join() waits for thread to join the main method before any further
-
 // implementation of the code.
 // A thread can be given a name by setName. And we can fetch its name using getName.
 // A thread has priority ranging from 1 - 10 ( lowest to highest ). You can also set it using constant 
@@ -29,7 +28,7 @@ public class Main6 {
 
 		Thread t2 = new Thread(() -> {
 			for (int i = 0; i < 5; i++) {
-				System.out.println("NaHao");
+				System.out.println("NaHao "+ Thread.currentThread().getPriority());
 				try {
 					Thread.sleep(500);
 				} catch (InterruptedException e) {
