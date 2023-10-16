@@ -108,6 +108,7 @@ public class _02_ListProject {
 		abc.add(-10);
 
 		// toArray() returns all the elements in the list into an object array
+		// // to return array of specific type, pass non-primitive
 		for (Integer aa : abc.toArray(new Integer[0])) {
 			System.out.print(aa + ", ");
 		}

@@ -2,7 +2,6 @@ package _10_Collection._01_List;
 
 import java.util.PriorityQueue;
 
-
 /*
  Based on priority heap
  Takes log(n) time for both insertion and deletion

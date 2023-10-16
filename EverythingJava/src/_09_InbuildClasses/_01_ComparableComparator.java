@@ -123,14 +123,14 @@ public class _01_ComparableComparator {
 //		li.sort(null); // you can uncomment it and comment the line below, as they do the same job
 		Collections.sort(li, null);
 		System.out.println(li);
-		
 
 		
 		// Custom Comparator object
 		Comparator<test> c = (test o1, test o2) -> {
 			return o1.getUsn() - o2.getUsn();
 		};
-
+		
+		
 		// Here we pass Comparator object in li.sort(c) and Collections.sort(li, c)
 //		li.sort(c); // you can uncomment it and comment the line below, as they do the same job
 		Collections.sort(li, c);

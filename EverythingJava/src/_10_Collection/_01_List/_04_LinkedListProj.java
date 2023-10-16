@@ -4,7 +4,7 @@ import java.util.LinkedList;
 /*
 Follows doubly linked list as data structure. 
 No concept of inital capacity and incremental capacity.
-Supports multi-threading
+Supports multi-threading but inherintly not thread-safe
 Linked list are better performing when you have to object in between of the list as it uses nodes to point to 
 next element. But when it comes to look up, linkedlist aren't great becuase you have to pass through each object
 from begining.

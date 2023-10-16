@@ -1,4 +1,10 @@
 package _10_Collection._01_List;
+
+/*
+ Java collection can't store primitive data types, it only stores the non-primitive data type.
+ Since primitive data type aren;t object. Collection requires object for manipulation 
+ */
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;

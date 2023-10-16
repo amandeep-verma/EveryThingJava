@@ -4,7 +4,7 @@ import java.util.Vector;
  Follows growable array as datastructure. 
  Initial Capacity 10. Incremental capacity = 2* old capacity
  Doesn't support multi threading
- Vectors are synchronized whereas arraylist is not.
+ Vectors are synchronized which is to say only 1 thread can access it at one time.
  Vectors supoort both iterator and enumeration. 
  */
 public class _05_VectorProj {
